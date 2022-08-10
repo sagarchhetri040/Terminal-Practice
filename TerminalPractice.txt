@@ -1,0 +1,113 @@
+Part I
+Complete all work inside the galaxy-far-far-awayfolder.
+
+Create a directory called death_star, and make the following files inside of it: darth_vader.txt, princess_leia.txt, storm_trooper.txt
+In galaxy-far-far-away, make a directory named tatooineand create the following files in it: luke.txt, ben_kenobi.txt
+Inside of tatooinemake a directory called millenium_falcon, and in it create: han_solo.txt, chewbaca.txt
+
+cd onedrive
+cd desktop
+cd dev 
+cd labs
+mkdir StarWarTerminlas
+cd starwarsterminal
+mkdir galaxy-far-far-away
+cd galaxy-far-far-away
+touch commands.txt
+mkdir death_star
+cd death_star
+touch darth_vader.txt
+touch princess_leia.txt
+touch storm_trooper.txt
+cd..
+mkdir tatooine
+cd tatooine
+touch luke.txt
+touch ben_kenobi
+mkdir millenium_falcon
+cd millenium_falcon
+touch han_solo.txt
+touch chewbaca.txt
+
+Part II: mv- rename
+You can rename a file using the mvcommand.
+
+Rename ben_kenobi.txtto obi_wan.txt
+
+(continue from part I)
+
+cd ..
+mv ben_kenobi.txt obi_wan.txt
+
+Part II: cp- copy
+You can copy a file from one location to another using the cpcommand. (man cpfor more info)
+
+Directories can be sibling (parrell to each other) or can be parents (the folder that contains the folder you are in)
+Copy storm_trooper.txtfrom death_starto tatooine
+
+cd ..
+cd death_star
+cp storm_trooper.txt tatooine
+
+Part IV: mv- move
+You can use the mv command to move files from one location to another. mvcan be used for renaming, moving, or both. Run man mvto see the options—remember hit the Qkey to get out of the manual page viewer.
+
+Move luke.txtand obi_wan.txt to the millenium_falcon
+	cd tatooine
+	mv luke.txt millenium_falcon
+	mv ovi_wan.txt millenium_falcon
+	
+Move millenium_falcon out of tatooine and into galaxy-far-far-away
+	mv -r millenium_falcon galaxy_far_far-away
+
+Move millenium_falconinto death_star
+	mv millenium_falcon death_star
+	 
+Move princess_leia.txtinto the millenium_falcon
+
+
+Part V: rm- remove
+BE CAREFUL WITH rm!!! THERE IS NO "TRASH" IN THE UNIX CLI. WHEN YOU DELETE SOMETHING IT IS GONE FOREVER!!!
+
+You can use rmto delete a file.
+
+Delete obi_wan.txt.
+
+rm  obi_wan.txt
+
+
+Part VI: all together
+In galaxy-far-far-away, make a directory called yavin_4
+Move the millenium_falconout of the death_starand into yavin_4
+Make a directory in yavin_4called x_wing
+Move yavin_4 yavin_4and luke.txtto x_wing
+Move the millenium_falconand x_wingout of yavin_4and into galaxy-far-far-away
+In death_star, create directories for tie_fighter_1, tie_fighter_2and tie_fighter_3
+Move darth_vader.txtinto tie_fighter_1
+Make a copy of storm_trooper.txtin both tie_fighter_2and tie_fighter_3
+Move all of the tie_fightersout of the death_starand into galaxy-far-far-away
+
+cd..
+mkdir yavin_4
+mv  millenium_falcon yavin_4
+cd yavin_4
+mkdir  x_wing
+mv yavin_4 x_wing
+mv luke.txtto  x_wing
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
